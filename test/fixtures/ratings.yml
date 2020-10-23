@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  store: one
+  value: 1
+  opinion: MyString
+  user_name: MyString
+
+two:
+  store: two
+  value: 1
+  opinion: MyString
+  user_name: MyString
