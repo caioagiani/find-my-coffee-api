@@ -15,3 +15,6 @@ Style/ClassAndModuleChildren:
 
 Lint/SuppressedException:
   Enabled: false
+
+Style/SymbolProc:
+  Enabled: false

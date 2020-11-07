@@ -11,11 +11,13 @@ class Api::V1::RatingsController < ApplicationController
   private
 
   def create_store
+    param = params[:store]
+
     @store = Store.find_or_create_by!(
-      lonlat: "POINT(#{params[:store][:longitude].to_f}  #{params[:store][:latitude].to_f})",
-      name: params[:store][:name],
-      address: params[:store][:address],
-      google_place_id: params[:store][:google_place_id]
+      lonlat: "POINT(#{param[:longitude].to_f} #{param[:latitude].to_f})",
+      name: param[:name],
+      address: param[:address],
+      google_place_id: param[:google_place_id]
     )
   end
 

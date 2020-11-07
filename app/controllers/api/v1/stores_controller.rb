@@ -3,7 +3,7 @@ class Api::V1::StoresController < ApplicationController
 
   def index
     @stores = Store.within(params[:longitude].to_f, params[:latitude].to_f, 2000)
-                   .sort_by { |store| store.&:ratings_avarage }
+                   .sort_by { |store| store.ratings_avarage }
                    .reverse
   end
 
