@@ -1,5 +1,5 @@
-require "rest-client"
-require "json"
+require 'rest-client'
+require 'json'
 
 class GoogleListCoffeeService
   def initialize(latitude, longitude)

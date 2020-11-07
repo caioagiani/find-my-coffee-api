@@ -2,7 +2,7 @@ Layout/SpaceInsideBlockBraces:
   EnforcedStyle: space
 
 Style/StringLiterals:
-  EnforcedStyle: double_quotes
+  EnforcedStyle: single_quotes
 
 Style/FrozenStringLiteralComment:
   Enabled: false
