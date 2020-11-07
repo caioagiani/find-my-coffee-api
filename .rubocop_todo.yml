@@ -1,0 +1,17 @@
+Layout/SpaceInsideBlockBraces:
+  EnforcedStyle: space
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
+
+Lint/SuppressedException:
+  Enabled: false

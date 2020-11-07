@@ -1,5 +1,4 @@
 class Api::V1::RatingsController < ApplicationController
-
   def create
     ActiveRecord::Base.transaction do
       create_store
@@ -26,8 +25,8 @@ class Api::V1::RatingsController < ApplicationController
     @rating.store_id = @store.id
     @rating.save!
   end
-  
+
   def ratings_params
-    params.require(:rating).permit(:value, :opinion, :user_name)  
+    params.require(:rating).permit(:value, :opinion, :user_name)
   end
 end

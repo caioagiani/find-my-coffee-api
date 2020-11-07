@@ -4,6 +4,6 @@ class Api::V1::GoogleStoresController < ApplicationController
   end
 
   def show
-    render json: GoogleDetailsCoffeeService.new(params[:id]).call    
+    render json: GoogleDetailsCoffeeService.new(params[:id]).call
   end
 end
